@@ -82,18 +82,17 @@ def make_complete_graph(num_nodes):
     
 def dpa_alg(num_nodes, num_edges):
     dir_graph = make_complete_graph(num_edges)
-    for node in range(num_edges, num_nodes):
-        dpa = DPATrial(num_edges)
+    dpa = DPATrial(num_edges)
+    for node in range(num_edges, num_nodes):        
         rand_nodes = dpa.run_trial(num_edges)
-        dir_graph[node] = set(rand_nodes)
-        print dir_graph[node]
+        dir_graph[node] = set(rand_nodes)        
     return dir_graph
             
                    
 #compute a DPA graph using the values from Question 3,
-print "hello"
+
 dpa_graph = dpa_alg(27770,13)
-print "Done"
+
 
 #exit()
 # compute a (normalized) log/log plot of the points in the 
@@ -162,6 +161,7 @@ for key in in_degree_dist_normal:
 simpleplot.plot_lines('log/log plot of in_degree distribution DPA graph', 600, 600, 'in_degree', 'number of nodes (normalized)', [dataset_in_degree_dist_normal_loglog], True, ['Normalized in-degree distribution of citation'])
 
 
+#######Q5:
 
 
 
