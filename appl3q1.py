@@ -1,4 +1,4 @@
-#!/usr/intel/pkgs/python3/3.10.8/bin/python3
+
 
 """
 Cluster class for Module 3
