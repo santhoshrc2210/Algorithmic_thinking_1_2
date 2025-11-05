@@ -5,6 +5,7 @@ cluster of county-based cancer risk data
 Note that you must download the file
 http://www.codeskulptor.org/#alg_clusters_matplotlib.py
 to use the matplotlib version of this code
+santhoshrc2210: modified the provided code settings as per requirement
 """
 
 # Flavor of Python - desktop or CodeSkulptor
